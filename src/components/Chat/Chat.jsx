@@ -2,11 +2,11 @@ import React from 'react'
 import ChatWindow from './ChatWindow'
 import ChatInput from './ChatInput'
 
-function Chat() {
+function Chat(props) {
   return (
-    <div className=' flex-grow flex flex-col bg-gray-800 rounded-lg '>
-        <ChatWindow />
-        <ChatInput/>
+    <div className=' flex-grow flex flex-col relative bg-gray-800 rounded-lg '>
+        <ChatWindow user={props.user} />
+        <ChatInput user={props.user} />
     </div>
   )
 }

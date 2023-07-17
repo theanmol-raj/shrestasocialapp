@@ -18,7 +18,7 @@ function HomeScreen(props) {
 
       <div className=" flex-grow flex w-screen bg-[#1a1a1a] ">
         <ContactList />
-            {showFeed ? <Feed user={props.user} /> : <Chat />}           
+            {showFeed ? <Feed user={props.user} /> : <Chat user={props.user} />}           
         <UserProfile user={props.user} logout={props.logout} showFeed={showFeed} feedChanger={setShowFeed} />
       </div>
 
